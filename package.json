@@ -2,7 +2,7 @@
   "name": "typescript-oss-template",
   "version": "0.0.1",
   "description": "TypeScript OSS template",
-  "author": "m-mitsuhide <m.mitsuhide@amatelus.com>",
+  "author": "Solufa <solufa2020@gmail.com>",
   "license": "MIT",
   "bin": "bin/index.js",
   "scripts": {
