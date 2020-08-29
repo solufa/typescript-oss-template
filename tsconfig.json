@@ -3,7 +3,6 @@
     "declaration": true,
     "declarationMap": true,
     "downlevelIteration": true,
-    "experimentalDecorators": true,
     "esModuleInterop": true,
     "lib": ["esnext", "dom"],
     "module": "commonjs",
