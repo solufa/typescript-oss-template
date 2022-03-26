@@ -37,7 +37,7 @@
   "dependencies": {
     "@types/minimist": "^1.2.2",
     "chokidar": "^3.5.3",
-    "minimist": "^1.2.5"
+    "minimist": "^1.2.6"
   },
   "eslintConfig": {
     "env": {
