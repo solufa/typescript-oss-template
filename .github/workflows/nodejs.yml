@@ -8,7 +8,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node-version: [14, 16]
+        node-version: [16, 18]
         os: [windows-latest, ubuntu-latest]
     steps:
       - uses: actions/checkout@v2
@@ -32,7 +32,7 @@ jobs:
       - run: yarn typecheck
       - run: yarn test --coverage
       - run: npx codecov
-        if: github.ref == 'refs/heads/master' && matrix.os == 'ubuntu-latest' && matrix.node-version == 14
+        if: github.ref == 'refs/heads/master' && matrix.os == 'ubuntu-latest' && matrix.node-version == 18
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
@@ -45,7 +45,7 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: "12.x"
+          node-version: "18.x"
           registry-url: "https://registry.npmjs.org"
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
