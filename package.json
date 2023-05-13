@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "npm run build && node bin/index.js",
     "build": "npm run rimraf && tsc",
-    "rimraf": "node -e \"require('fs').rmdirSync('dist', { recursive: true })\"",
+    "rimraf": "node -e \"require('fs').existsSync('dist') && require('fs').rmdirSync('dist', { recursive: true })\"",
     "release": "standard-version --skip.tag",
     "release:major": "npm run release -- --release-as major",
     "release:minor": "npm run release -- --release-as minor",
